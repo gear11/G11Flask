@@ -4,3 +4,4 @@ server/lib/*
 # include README so user doesn't have to create this dir
 !server/lib/README.txt
 .DS_Store
+.idea/
