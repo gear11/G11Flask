@@ -7,5 +7,9 @@
     {% else %}
       <h1>Hello from SSH World!</h1>
     {% endif %}
+    X Request: {{ request.method }} {{ request.path }}
+    {% for k,v in request.headers %}
+    {{k}} : {{v}}
+    {% endfor %}
   </body>
 </html>
