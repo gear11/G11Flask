@@ -15,7 +15,7 @@ from filters.custom import json_filter, dpath_filter
 
 app = Flask(__name__.split('.')[0])
 logging.basicConfig(level=logging.INFO)
-APPROVED_HOSTS = set(["google.com", "www.google.com", "yahoo.com"])
+APPROVED_HOSTS = {"google.com", "www.google.com", "yahoo.com"}
 CHUNK_SIZE = 1024
 LOG = logging.getLogger("main.py")
 
@@ -57,11 +57,6 @@ def decorate(url):
     r = requests.get("http://"+ url, params = request.args)
     _, host, uri = split_url('http://%s' % url)
     return render_template('%s.html' % host, text = r.text)
-
-    LOG.info("Received response of type: %s", r.headers.get("content-type"))
-    j = r.json()
-    text = '%s%s%s' % (TOP, j.get("Html"), BOTTOM)
-    return Response(text)
 
 
 def get_source_rsp(url):
