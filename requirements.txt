@@ -3,3 +3,4 @@
 # in this project's server/lib directory.
 Flask==0.10
 requests==2.1.0
+dpath==1.2-45
