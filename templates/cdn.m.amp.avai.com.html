@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head id="Head1">
+    <title>
+        Carowinds
+    </title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.m.amp.avai.com/bundles/mobiledetection?v=gGz3V0YLCkrYkTlcEhtgeySStxGDU2DScPsZL7hOIDQ1"></script>
+    <style type="text/css">
+    .fancybox-inner {
+        height: auto !important;
+    }
+</style>
+
+
+    <link href="http://cdn.m.amp.avai.com/Content/CustomStyle.ashx?appId=92" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.m.amp.avai.com/Content/MobileWeb.ashx?appid=92"
+        rel="stylesheet" type="text/css" />
+    <link href="http://cdn.m.amp.avai.com/Content/bundle?v=tzKyuJC8i4JWsQmwQlCKUuHHHo8UwIc6cBylwPoEddY1" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+
+
+    <meta name="apple-itunes-app" content="app-id=527186374"/>
+
+    <!--[if IE 7]>
+    <style type="text/css">
+        #menu {
+            display: inline;
+        }
+        #menu li {
+            display: inline;
+        }
+    </style>
+    <![endif]-->
+    <style type="text/css">
+        .content_table
+        {
+			width: 100%;
+            border: 0px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var MWS = MWS || {};
+        MWS.AppId = 92;
+        MWS.DeviceProperties = MWS.DeviceProperties || {};
+        MWS.DeviceProperties.PixelWidth = 320;
+        MWS.DeviceProperties.IsMobile = false;
+        MWS.Config = MWS.Config || {};
+
+        MWS.Config.CdnRoot = 'http://cdn.m.amp.avai.com';
+        MWS.Config.MwsCdnRoot = 'http://cdn.m.amp.avai.com';
+        MWS.Config.LoaderHtml = '<img src="http://cdn.m.amp.avai.com/Content/images/ajax-loader.gif"/>';
+
+        $(document).ready(function() {
+            MWS.DeviceProperties.DeviceWidth = MWS.DeviceProperties.IsMobile ? $(document).width() : 320;
+            MWS.DeviceProperties.HeightMultiplicationFactor = MWS.DeviceProperties.DeviceWidth / 320;
+            $(".mobileBody").css('max-width', MWS.DeviceProperties.PixelWidth);
+        });
+    </script>
+
+    <style type="text/css">
+        .mobileBody
+        {
+            max-width: 320px;
+        }
+    </style>
+
+    <!-- GOOGLE ANALYTICS BEGIN -->
+
+    <script type="text/javascript">
+        function getRelativePath(fullUrl) {
+            var hostname = window.location.hostname;
+            var firstSlash = fullUrl.indexOf('/', fullUrl.indexOf(hostname));
+            return fullUrl.substr(firstSlash);
+        }
+        function SendGAView(url, pageTitle) {
+            _gaq.push(['_setAccount', 'UA-32585059-1']);
+            _gaq.push(['_setCustomVar', 1, 'AppDomainId', '92', 2]); // we will add this in, momentarily
+
+            _gaq.push(['_setDomainName', 'none']);
+            _gaq.push(['_setAllowLinker', true]);
+
+            var sendNamedUrl = false;
+            var trackingString = url;
+            if (sendNamedUrl)
+                trackingString = '/' + pageTitle + url;
+
+            _gaq.push(['_trackPageview', trackingString]);
+
+
+            _gaq.push(['aggregate._setAccount', 'UA-40200663-1'], ['aggregate._trackPageview']);
+
+        }
+        var _gaq = _gaq || [];
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        SendGAView(getRelativePath(document.URL), 'Home');
+
+    </script>
+
+    <!-- GOOGLE ANALYTICS END -->
+
+
+</head>
+
+<body class="mobileBody">
+    <table class="content_table" data-role="page">
+
+        <tr>
+            <td class="XtopMenu" id="XtopMenuContainer">
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="pageTitle" id="master_page_title">
+
+            </td>
+        </tr>
+
+        <tr>
+            <td id="content_area">
+<!-- BEGIN DYNAMIC CONTENT -------------------------------------------->
+                {{ text | json | dpath('Html') | safe }}
+<!-- END DYNAMIC CONTENT -------------------------------------------->
+</td></tr></table>
+    <script type="text/javascript" src="http://cdn.m.amp.avai.com/Landing/DownloadAppPopup/92"></script>
+
+    <!--Rendered 12/17/2013 3:13:00 AM -->
+    <script type="text/javascript" src="http://cdn.m.amp.avai.com/Scripts/ajax/shared?v=s4nYZFl_BHr48s0V1wAvGzZqv92U1I6fN14x8UvnR3I1"></script>
+        <script type="text/javascript">
+            easyXDM.DomHelper.requiresJSON("/Scripts/easyXDM/json2.js");
+    </script>
+    <a class="fancybox" rel="group" href="#ad_popup"></a>
+<div id="ad_popup">
+
+</div>
+
+
+    <script type="text/javascript">
+        var topLeftButtonUrl = "";
+        var topLeftButtonImage = "";
+
+        $(document).ready(function () {
+            // try to select top menu if available
+
+            $("#topMenu_197109").addClass("selectedMenu");
+
+            MWS.AjaxManager.initialize();
+
+            MWS.AjaxManager.addAjaxable();
+            MWS.AjaxManager.catchClicks("#content_area a.ajaxable");
+            MWS.AjaxManager.catchExternalClicks("a.external");
+            MWS.Config.appNavigationStyle = 'TopLevel';
+
+            MWS.AjaxManager.loadTopMenu("#topMenuContainer", 92, 204379, '/197108/197109/');
+
+            //MWS.AjaxManager.catchClicks("a.ajaxable");
+
+            $("#topLeftButton").hide();
+
+        });
+
+        MWS.AjaxManager.CurrentTreeId = 204379;
+
+
+           </script>
+</body>
+</html>
